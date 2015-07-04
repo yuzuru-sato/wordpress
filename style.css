@@ -111,7 +111,7 @@ strong {
 /* Object ************************************/
 /* Component 汎用性高いもの */
 
-/* Component - レイアウト調整 */
+/* Component - ユーティリティ */
 .grid__item {
 	float: left;
 	box-sizing: border-box; 
