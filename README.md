@@ -1,18 +1,19 @@
 # wordpressの初期設定ファイル
 
 - 全体
- -HTML5を利用
+ - HTML5を利用
 
 - header.php
- -下記を参考に設定
+ - 下記を参考に設定
  - http://wp-and.me/head_clean/
-
-- functions.php
- - http://millkeyweb.com/wp-functions-management/ に記載の方法で/lib/以下にfunction.phpを分割して管理
-  -初期ファイルは、「デフォルトで<head>内に追加されるemojiのスクリプトとstyleを消去」を実施
 
 - /lib/
  - function.phpの記載を分割して管理
+
+- functions.php
+ - http://millkeyweb.com/wp-functions-management/ に記載の方法で/lib/以下にfunction.phpを分割して管理
+  - 初期ファイルは、「デフォルトで<head>内に追加されるemojiのスクリプトとstyleを消去」を実施
+  - カスタム投稿タイプ（post_type "examples"を追加）
 
 - index.php
  - 特になし
