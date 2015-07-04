@@ -14,6 +14,7 @@
  - http://millkeyweb.com/wp-functions-management/ に記載の方法で/lib/以下にfunction.phpを分割して管理
   - 初期ファイルは、「デフォルトで<head>内に追加されるemojiのスクリプトとstyleを消去」を実施
   - カスタム投稿タイプ（post_type "examples"を追加）
+    - 参考　http://kachibito.net/wordpress/custom-post-type-list.html　http://morilog.com/wordpress/post_type/register_post_type/
 
 - index.php
  - 特になし
@@ -22,7 +23,7 @@
  - 特になし
 
 - style.css(ご自由に変更してください)
- -リセットCSSを設定
+ - リセットCSSを設定
  - 大枠をカスタマイズ
   - →Baseデザイン
   - →ユーティリティ
