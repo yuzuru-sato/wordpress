@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: example
+Theme Name: English
 Theme URI: http://example.com/themes/twentythirteen
 Author: hogehoge
 Author URI: http://example.com/
@@ -70,8 +70,8 @@ a:focus {
 
 /* Baseデザイン */
 body {
-	background: #fff;
-	color: #000;
+	background: #000;
+	color: #fff;
 	font-family:  "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
 }
 a {
@@ -111,7 +111,8 @@ strong {
 /* Object ************************************/
 /* Component 汎用性高いもの */
 
-/* Component - ユーティリティ */
+
+/* Component - レイアウト調整 */
 .grid__item {
 	float: left;
 	box-sizing: border-box; 
@@ -174,6 +175,8 @@ strong {
 .clearfix {
     min-height: 1px;
 }
+
+
 
 /* Project プロジェクト固有のもの */
 

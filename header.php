@@ -13,7 +13,6 @@
         <meta name="viewport" content="width=device-width" />
         <title><?php wp_title(); ?></title>
         <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <!--[if lt IE 9]>
 		<script src="http://wordpress-and.me/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
 		<![endif]-->
