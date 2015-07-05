@@ -2,6 +2,13 @@
 //アイキャッチ画像を出力
 add_theme_support('post-thumbnails');
 
+//カスタムメニューの表示
+add_theme_support( 'menus' );
+
+//ウィジェットの利用
+if ( function_exists('register_sidebar') )
+register_sidebar();
+
 //カスタム投稿タイプを追加(exapless)
 add_action( 'init', 'post_type_apps' );
 function post_type_apps() {
