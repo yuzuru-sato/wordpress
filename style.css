@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*
+Theme Name: Example
+Theme URI: http://example.com/themes/twentythirteen
+Author: hogehoge
+Author URI: http://example.com/
+Description: hogehoge
+Version: 1.0
+License: hoge
+License URI: http://example.com/licenses/
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: hogehoge
+
+*/
+/* Foundation *************************************/
+/* リセットCSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{
+    overflow-y: scroll;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+input, textarea,{
+    margin: 0;
+    padding: 0;
+}
+ol, ul{
+    list-style:none;
+}
+table{
+    border-collapse: collapse; 
+    border-spacing:0;
+}
+caption, th{
+    text-align: left;
+}
+a:focus {
+    outline:none;
+}
+
+/* Baseデザイン */
+body {
+	background: #000;
+	color: #fff;
+	font-family:  "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+}
+a {
+	color: red;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+a img:hover {
+    filter: alpha(opacity=75);
+    -moz-opacity:0.75;
+    opacity:0.75;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+img {
+    max-width:100%;
+    height: auto;
+}
+table {
+    width:100%;
+}
+strong {
+	font-weight: bold;
+}
+
+/* Layout *************************************/
+
+/* Object ************************************/
+/* Component 汎用性高いもの */
+
+
+/* Component - レイアウト調整 */
+.grid__item {
+	float: left;
+	box-sizing: border-box; 
+	width: 16.67%;
+	> div {
+		background-color: rgba(#489);
+	}
+}
+.grid__item--1 {	width: 8.333%;	}
+.grid__item--2 {	width: 16.667%;	}
+.grid__item--3 {	width: 25%;		}
+.grid__item--4 {	width: 33.333%;	}
+.grid__item--5 {	width: 41.666%;	}
+.grid__item--6 {	width: 50%;		}
+.grid__item--7 {	width: 58.333%;	}
+.grid__item--8 {	width: 66.666%;	}
+.grid__item--9 {	width: 75%;		}
+.grid__item--10 {	width: 83.33%;	}
+.grid__item--11 {	width: 91.666%;	}
+.grid__item--12 {	width: 100%;	}
+.has-gutter5 {		padding-left: 5px; padding-right: 5px;}
+.has-gutter10 {		padding-left: 10px; padding-right: 10px;}
+.has-gutter20 {		padding-left: 20px; padding-right: 20px;}
+
+.ftsize80 {		font-size: 80%;		}
+.ftsize90 {		font-size: 90%;		}
+.ftsize100 {	font-size: 100%;	}
+.ftsize110 {	font-size: 110%;	}
+.ftsize120 {	font-size: 120%;	}
+.pdt10 {		padding-top: 10px;	}
+.pdb10 {		padding-bottom: 10px;}
+.pdtb10 {		padding-top: 10px; padding-bottom: 10px;}
+.pdr10 {		padding-right: 10px;	}
+.pdl10 {		padding-left: 10px;		}
+.pdlr10 {		padding-left: 10px;	padding-right: 10px;	}
+.pd10 {			padding: 10px;}
+.mgt10 {		margin-top: 10px;	}
+.mgb10 {		margin-bottom: 10px;}
+.mgtb10{		margin-top: 10px; margin-bottom: 10px;}
+.pdt20 {		padding-top: 20px;	}
+.pdb20 {		padding-bottom: 20px;}
+.pdtb20 {		padding-top: 20px; padding-bottom: 20px;}
+.mgt20 {		margin-top: 20px;	}
+.mgb20 {		margin-bottom: 20px;}
+.mgtb20{		margin-top: 20px; margin-bottom: 20px;}
+.aligncenter{	text-align: center;}
+.alignleft {	text-align: left;	}
+.alignright {	text-align: right;	}
+.fl_l {			float: left;		}
+.fl_r {			float: right;		}
+.fl_n {			float: none;		}
+
+.clearfix:after {
+    content: "."; 
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    min-height: 1px;
+}
+
+
+
+/* Project プロジェクト固有のもの */
+
+
+
